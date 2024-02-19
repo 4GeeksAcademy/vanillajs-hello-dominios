@@ -2,7 +2,7 @@ let pronoun = ['the', 'our'];
 let adj = ['great', 'big'];
 let noun = ['jogger', 'racoon'];
 
-function generateDomain(pronouns, adjectives, nouns) {
+function generadorDeDominios(pronouns, adjectives, nouns) {
     let domainNames = [];
     for (let i = 0; i < pronouns.length; i++) {
         for (let j = 0; j < adjectives.length; j++) {
@@ -15,5 +15,5 @@ function generateDomain(pronouns, adjectives, nouns) {
     return domainNames;
 }
 
-let domainNames = generateDomain(pronoun, adj, noun);
+let domainNames = generadorDeDominios(pronoun, adj, noun);
 console.log(domainNames.join("\n"));
